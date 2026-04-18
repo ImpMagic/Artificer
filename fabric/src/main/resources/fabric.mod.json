@@ -12,7 +12,7 @@
     "environment": "*",
     "entrypoints": {
         "main": [
-            "impmagic.Artificer"
+          "impmagic.ArtificerFabric"
         ]
     },
     "depends": {
