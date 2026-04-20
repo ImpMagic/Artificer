@@ -15,7 +15,10 @@ public final class ModBlocks {
     }
 
     public static final BlockWithItemRegistryHandle<Block> EXAMPLE_BLOCK = Services.REGISTRY.registerBlockWithItem("example_block",
-                properties -> new Block(properties.strength(3.0F, 15.0F).requiresCorrectToolForDrops()));
+                properties -> new Block(properties.strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
+
+    public static final BlockWithItemRegistryHandle<Block> ORANIUM_ORE = Services.REGISTRY.registerBlockWithItem("oranium_ore",
+            properties -> new Block(properties.strength(3.0F, 3.0F).requiresCorrectToolForDrops()));
 
     // Can add this line to add properties, without it create a default block item.
     //15.0F)), ((block, properties) -> new BlockItem(block, properties.stacksTo(32))));

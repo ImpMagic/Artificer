@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "artificer:example_block",
     "artificer:oranium_ore"
   ]
 }
