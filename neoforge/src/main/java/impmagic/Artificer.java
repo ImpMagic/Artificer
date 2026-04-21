@@ -6,9 +6,9 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 
 @Mod(Constants.MOD_ID)
-public class ArtificerNeoForge {
+public class Artificer {
 
-    public ArtificerNeoForge(IEventBus eventBus) {
+    public Artificer(IEventBus eventBus) {
 
         // This method is invoked by the NeoForge mod loader when it is ready
         // to load your mod. You can access NeoForge and Common code in this
@@ -17,6 +17,7 @@ public class ArtificerNeoForge {
         // Use NeoForge to bootstrap the Common mod.
         Constants.LOG.info("Hello from Artificer Mod!");
         CommonClass.init();
+        eventBus.addListener(ArtificerDatagen::onGatherClientData);
         NeoForgeRegistryHelper.register(eventBus);
     }
 }
